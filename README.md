@@ -1,30 +1,66 @@
-# Conversor de Monedas
+# Currency Converter
 
-Este proyecto es un conversor de monedas que permite convertir entre diferentes monedas utilizando tasas de cambio en tiempo real proporcionadas por la API de OpenExchangeRates.
+Java console app that fetches real-time exchange rates from the
+[OpenExchangeRates API](https://openexchangerates.org) and converts
+between multiple currencies interactively.
 
-## Instrucciones de Uso
-Para utilizar el conversor de monedas:
-1. Ejecute la aplicación.
-2. Escoja la opción de moneda que quiere convertir
-3. Ingrese el valor que desea convertir de acuerdo a la opción seleccionada
-4. Obtendrá el valor convertido según las tasas de cambio actuales.
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
+![HTTP Client](https://img.shields.io/badge/HttpClient-007396?style=flat&logo=java&logoColor=white)
+![JSON](https://img.shields.io/badge/Gson-000000?style=flat&logo=json&logoColor=white)
 
-## Requisitos para el uso de esta aplicación
-Requisitos:
-- Java JDK 8 o superior
-- Acceso a internet para consultar las tasas de cambio en tiempo real
+## How it works
 
-## Configuración
+1. Run the application
+2. Choose the currencies you want to convert between
+3. Enter the amount
+4. Get the converted value using live exchange rates
 
-Configuración:
-1. Clone este repositorio en su máquina local.
-2. Configure su API Key de OpenExchangeRates en el archivo OpenExchangeRateApi.java.
-3. Compile y ejecute el proyecto utilizando su IDE preferido o mediante línea de comandos.
+## Getting started
 
-## Contribución
+### Prerequisites
 
-Si desea contribuir a este proyecto, por favor envíe un pull request con una descripción clara de los cambios propuestos. Sería de gran ayuda saber en qué puedo mejorar y aprender
+- Java 8+
+- OpenExchangeRates API key (free tier works) — get one at [openexchangerates.org](https://openexchangerates.org)
+- Internet connection
 
-## Contacto
+### Installation
 
-Para cualquier pregunta o comentario, por favor contácteme a través de mi perfil de GitHub o por correo electrónico a yuan.retamozo.27@unsch.edu.pe
+```bash
+# 1. Clone the repository
+git clone https://github.com/Ccirhack/Conversor-de-Moneda---Challenge-ONE--Java---Back-end.git
+cd Conversor-de-Moneda---Challenge-ONE--Java---Back-end
+
+# 2. Add your API key in src/main/java/.../OpenExchangeRateApi.java
+private static final String API_KEY = "YOUR_API_KEY_HERE";
+
+# 3. Compile and run
+javac Main.java
+java Main
+```
+
+## Supported currencies
+
+| Code | Currency |
+|------|----------|
+| USD | US Dollar |
+| EUR | Euro |
+| PEN | Peruvian Sol |
+| BRL | Brazilian Real |
+| ARS | Argentine Peso |
+| COP | Colombian Peso |
+
+## What I learned
+
+- Making HTTP requests with Java HttpClient
+- Parsing JSON responses with Gson
+- Structuring a console-driven Java application
+- Working with external APIs and API keys
+
+## Contributing
+
+Contributions are welcome. Please open an issue first to discuss
+any changes, then submit a pull request.
+
+## Contact
+
+Yuan Retamozo · [LinkedIn](https://www.linkedin.com/in/yuan-retamozo/) · yretamozovilca@gmail.com
