@@ -27,8 +27,8 @@ between multiple currencies interactively.
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/Ccirhack/Conversor-de-Moneda---Challenge-ONE--Java---Back-end.git
-cd Conversor-de-Moneda---Challenge-ONE--Java---Back-end
+git clone https://github.com/Ccirhack/currency-converter-java
+cd currency-converter-java
 
 # 2. Add your API key in src/main/java/.../OpenExchangeRateApi.java
 private static final String API_KEY = "YOUR_API_KEY_HERE";
